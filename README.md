@@ -10,7 +10,7 @@ This project provides a basic example of using the OpenSSL library in a C/C++ pr
 
 1. Clone the repository or download the source code files.
 
-git clone https://github.com/your-username/openssl-example.git
+git clone https://github.com/guy-davidi/OpenSSLexProject.git
 
 2. Compile the source code using the following command:
 
