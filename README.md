@@ -2,10 +2,6 @@
 
 This project provides a basic example of using the OpenSSL library in a C/C++ program. It demonstrates how to generate an RSA key pair, perform encryption and decryption using the keys, and save the keys to PEM files.
 
-## Prerequisites
-
-- OpenSSL library (version X.X.X or above) must be installed on your system.
-
 ## Getting Started
 
 1. Clone the repository or download the source code files.
