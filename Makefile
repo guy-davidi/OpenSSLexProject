@@ -1,20 +1,19 @@
+# Makefile
 CC = gcc
-CFLAGS = -Wall -Wextra
-LIBS = -lssl -lcrypto
+CFLAGS = -Wall -Wextra -pthread
+LDFLAGS = -lssl -lcrypto
+SERVER_SRC = server.c
+CLIENT_SRC = client.c
+SERVER_OUT = server
+CLIENT_OUT = client
 
-SRCS = openssl_example.c
-OBJS = $(SRCS:.c=.o)
-EXEC = example
+all: server client
 
-.PHONY: all clean
+server: $(SERVER_SRC)
+	$(CC) $(CFLAGS) $(SERVER_SRC) -o $(SERVER_OUT) $(LDFLAGS)
 
-all: $(EXEC)
-
-$(EXEC): $(OBJS)
-	$(CC) $(CFLAGS) $(OBJS) -o $@ $(LIBS)
-
-%.o: %.c
-	$(CC) $(CFLAGS) -c $< -o $@
+client: $(CLIENT_SRC)
+	$(CC) $(CFLAGS) $(CLIENT_SRC) -o $(CLIENT_OUT) $(LDFLAGS)
 
 clean:
-	rm -f $(OBJS) $(EXEC)
+	rm -f $(SERVER_OUT) $(CLIENT_OUT)
