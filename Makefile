@@ -2,7 +2,7 @@ CC = gcc
 CFLAGS = -Wall -Wextra
 LIBS = -lssl -lcrypto
 
-SRCS = example.c
+SRCS = openssl_example.c
 OBJS = $(SRCS:.c=.o)
 EXEC = example
 
