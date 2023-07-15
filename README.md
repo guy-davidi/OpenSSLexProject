@@ -1,6 +1,7 @@
 # OpenSSL Example Project
 
-This project provides a basic example of using the OpenSSL library in a C/C++ program. It demonstrates how to generate an RSA key pair, perform encryption and decryption using the keys, and save the keys to PEM files.
+This project provides a basic example of using the OpenSSL library in a C/C++ program.
+It demonstrates how to generate an RSA key pair, perform encryption and decryption using the keys, and save the keys to PEM files.
 
 ## Getting Started
 
@@ -10,9 +11,9 @@ git clone https://github.com/guy-davidi/OpenSSLexProject.git
 
 2. Compile the source code using the following command:
 
-gcc example.c -o example -lssl -lcrypto
+gcc openssl_example.c -o example -lssl -lcrypto
 
-Make sure to replace `example.c` with the actual filename if necessary.
+Make sure to replace `openssl_example.c` with the actual filename if necessary.
 
 ## Usage
 
