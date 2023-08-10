@@ -1,4 +1,4 @@
-# OpenSSL Example Project
+# OpenSSL
 
 This project provides a basic example of using the OpenSSL library in a C/C++ program.
 It demonstrates how to generate an RSA key pair, perform encryption and decryption using the keys, and save the keys to PEM files.
